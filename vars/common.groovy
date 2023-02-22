@@ -18,7 +18,15 @@ def codeQuality() {
 
 def codeChecks() {
     if ( env.BRANCH_NAME == "main" || env.TAG_NAME ==~ ".*" ) {
-        echo 'codeChecks'
+
+        stage('Style & Lint Checks') {
+            echo 'Style Checks'
+        }
+
+        stage('Unit Tests') {
+            echo 'Unit Tests'
+        }
+
     }
 }
 
