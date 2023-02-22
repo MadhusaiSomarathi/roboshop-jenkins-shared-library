@@ -10,6 +10,8 @@ def codeQuality() {
             sh '''
         sonar-scanner -Dsonar.host.url=http://172.31.9.128:9000 -Dsonar.login=${sonarUser} -Dsonar.password=${sonarPass} -Dsonar.projectKey=${COMPONENT} -Dsonar.qualitygate.wait=true
         echo OK
+        exit 1
+        $
       '''
         }
     }
