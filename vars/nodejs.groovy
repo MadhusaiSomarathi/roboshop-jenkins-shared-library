@@ -7,7 +7,7 @@ def call() {
             common.codeChecks()
             common.artifacts()
         } catch (Exception e) {
-//            mail bcc: '', body: "Build Failed ${RUN_DISPLAY_URL}", cc: '', from: 'raghuk.vit@gmail.com', replyTo: '', subject: 'BUILD FAILURE', to: 'raghuk.vit@gmail.com'
+            mail bcc: '', body: "Build Failed ${RUN_DISPLAY_URL}", cc: '', from: 'msamrat789@gmail.com', replyTo: '', subject: 'BUILD FAILURE', to: 'msamrat789@gmail.com'
         }
 
     }
